@@ -15,7 +15,7 @@ public class hellp {
     @GetMapping("/hello")
     public static String main(String[] args) throws AnalysisException, IOException {
         ContentExtractor extractor = new ContentExtractor();
-        InputStream inputStream = new FileInputStream("C:\\Users\\Иван\\Desktop\\жопа.pdf");
+        InputStream inputStream = new FileInputStream("C:\\Users\\Иван\\Desktop\\a.pdf");
         extractor.setPDF(inputStream);
         return extractor.getMetadata().getJournal();
     }
